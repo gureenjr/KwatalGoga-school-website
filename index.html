@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kwatal Goga School</title>
+
+  <!-- Bootstrap (optional but makes layout easier) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Kwatal Goga School</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero text-white text-center">
+    <div class="container py-5">
+      <h1 class="display-5">Welcome to Kwatal Goga School</h1>
+      <p class="lead">Nurturing bright young minds — Nursery 1–3 & Primary 1–5</p>
+      <a href="academics.html" class="btn btn-light btn-lg mt-3">Our Programs</a>
+    </div>
+  </header>
+
+  <!-- Quick Info -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h3>What we offer</h3>
+          <p>Quality early years and primary education with safe learning spaces and caring teachers.</p>
+          <ul>
+            <li>Nursery 1 • Nursery 2 • Nursery 3</li>
+            <li>Primary 1 to Primary 5</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Our values</h3>
+          <ul>
+            <li>Integrity</li>
+            <li>Respect</li>
+            <li>Curiosity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-3 mt-5">
+    <div class="container text-center small">
+      © <span id="year"></span> Kwatal Goga School — All rights reserved
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your script -->
+  <script src="script.js"></script>
+  <script>
+    // quick inline fallback in case script.js doesn't run
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
